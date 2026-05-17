@@ -1,0 +1,31 @@
+{
+  "name": "hlquery-analytics",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Express + Sequelize analytics API and dashboard for hlquery",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --watch src --ext js --signal SIGTERM src/server.js",
+    "migrate": "node src/db/migrate.js",
+    "migrate:undo": "node src/db/migrate.js --undo",
+    "lint": "node -c src/server.js && node -c src/db/migrate.js && node -c src/db/sequelize.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "geoip-lite": "^1.4.10",
+    "helmet": "^7.2.0",
+    "mysql2": "^3.14.1",
+    "pino": "^9.7.0",
+    "pino-http": "^11.0.0",
+    "sequelize": "^6.37.7",
+    "umzug": "^3.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

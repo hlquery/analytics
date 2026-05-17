@@ -1,0 +1,56 @@
+:root {
+  --analytics-petrol: #0067b2;
+  --analytics-petrol-dark: #004d82;
+  --analytics-bg: #f8fafc;
+  --analytics-surface: #ffffff;
+  --analytics-text: #0f172a;
+  --analytics-muted: #475569;
+  --analytics-border: #e2e8f0;
+  --analytics-nav: #111827;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--analytics-bg);
+  color: var(--analytics-text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+}
+
+.analytics-shell .v-main {
+  background: var(--analytics-bg);
+}
+
+.analytics-shell .v-app-bar {
+  background: var(--analytics-nav) !important;
+}
+
+.analytics-shell .v-navigation-drawer {
+  background: var(--analytics-nav) !important;
+}
+
+.analytics-shell .v-navigation-drawer .v-divider {
+  opacity: 0.25;
+}
+
+.analytics-shell .v-list-item {
+  border-radius: 12px;
+}
+
+.analytics-shell .v-list-item--active {
+  background: rgba(255, 255, 255, 0.14) !important;
+}
+
+.analytics-shell .v-list-item:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.analytics-shell .v-card {
+  border: 1px solid var(--analytics-border) !important;
+  background: var(--analytics-surface) !important;
+}
