@@ -74,7 +74,7 @@ import { listEvents, listUsers } from '@/api';
 const route = useRoute();
 const router = useRouter();
 
-const user = ref('sam');
+const user = ref('alex');
 const windowHours = ref(24);
 const windowChoices = [
   { title: '1h', value: 1 },
@@ -168,7 +168,7 @@ function onOptions(options) {
 }
 
 onMounted(() => {
-  user.value = typeof route.query.user === 'string' ? route.query.user : 'sam';
+  user.value = typeof route.query.user === 'string' ? route.query.user : 'alex';
   appBar?.registerRefresh({ handler: refresh, loading });
   refresh();
 });

@@ -15,7 +15,7 @@
         <v-list-item :to="{ path: '/visitors' }" prepend-icon="mdi-account-outline" title="Visitors" />
         <v-list-item :to="{ path: '/countries' }" prepend-icon="mdi-earth" title="Countries" />
         <v-list-item :to="{ path: '/users' }" prepend-icon="mdi-account-group" title="Users" />
-        <v-list-item :to="{ path: '/users', query: { user: 'sam' } }" prepend-icon="mdi-account" title="Sam" />
+        <v-list-item :to="{ path: '/users', query: { user: 'alex' } }" prepend-icon="mdi-account" title="Alex" />
       </v-list>
 
       <v-list v-if="showAdmin" nav density="comfortable" class="mt-2">
